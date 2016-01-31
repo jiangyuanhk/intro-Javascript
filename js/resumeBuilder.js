@@ -1,10 +1,3 @@
-// var name = "Yuan Jiang";
-// var role = "Web Developer";
-// var formattedName = HTMLheaderName.replace("%data%", name);
-// var formattedRole = HTMLheaderRole.replace("%data%", role);
-// $("#header").append(formattedName);
-// $("#header").append(formattedRole);
-var skills = ["awesomeness", "programming", "JS"];
 var bio = {
     "name": "Yuan Jiang",
     "role": "Developer",
@@ -15,33 +8,55 @@ var bio = {
       "location": "Hanover, NH"
     },
     "welcomeMsg": "Hello World!",
-    "skills": skills,
+    "skills": ["awesomeness", "programming", "JS"],
     "bioPic": "http://placeholdit.com/100/100"
 };
 
-var work = {};
+var education = {
+  "schools": [
+    {
+      "name": "City University of Hong Kong",
+      "city": "Hong Kong",
+      "degree": "BA",
+      "major": "Electronic Engineering"
+    },
+    {
+      "name": "Dartmouth College",
+      "city": "Hanover, NH",
+      "degree": "MS",
+      "major": ["CompSci"]
+    }
+  ],
+  "onlineCourses": [
+    {
+      "title": "JavaScript Basics",
+      "school": "Udacity",
+      "date": 2014,
+      "url": "https://goo.gl/EBAkI1"
+    }
+  ]
+};
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedWelcomMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMsg);
-var formattedSkills = HTMLskills.replace("%data%", bio.contact.skills);
 
-var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-var formattedPhone = HTMLmobile.replace("%data%", bio.contact.phone);
-var formmattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-var formmattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
+var work = {
+  "jobs": [
+    {
+      "employer": "Facebook",
+      "title": "Software Engineer",
+      "dates": "June 2016 - "
+    }
+  ]
+}
 
-var formmatedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-
-$("#header").append(
-  formattedName + 
-  formattedRole + 
-  formattedEmail + 
-  formattedPhone + 
-  formmattedGithub + 
-  formmattedLocation + 
-  formattedWelcomMsg + 
-  formattedSkills);
+var projects = {
+  "projects": [
+    {
+      "title": "Sample Project 1",
+      "dates": "2014",
+      "description": "Sample Project 1 description"
+    }
+  ]
+}
 
 
 
