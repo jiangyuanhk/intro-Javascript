@@ -14,7 +14,7 @@ var bio = {
 
 var education = {
   "schools": [
-  
+
     {
       "name": "City University of Hong Kong",
       "city": "Hong Kong",
@@ -98,9 +98,6 @@ projects.display = function () {
     }
 }
 
-
-
-
 bio.display = function () {
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
@@ -149,6 +146,8 @@ bio.display();
 work.display();
 projects.display();
 education.displaySchools();
+
+$("#mapDiv").append(googleMap);
 
 
 
