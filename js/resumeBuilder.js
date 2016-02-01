@@ -14,6 +14,7 @@ var bio = {
 
 var education = {
   "schools": [
+  
     {
       "name": "City University of Hong Kong",
       "city": "Hong Kong",
