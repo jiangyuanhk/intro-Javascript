@@ -108,6 +108,7 @@ bio.display = function () {
   var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
   var formmattedWelcomMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMsg);
   $("#topContacts").append(formattedMobile + formattedEmail + formattedGithub);
+  $("#footerContacts").append(formattedMobile + formattedEmail + formattedGithub);
   $("#header").prepend(formattedName + formattedRole);
   $("#header").append(formattedBioPic);
 
@@ -148,7 +149,7 @@ projects.display();
 education.displaySchools();
 
 $("#mapDiv").append(googleMap);
-
+$("#main").append(internationalizeButton);
 
 
 

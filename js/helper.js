@@ -61,10 +61,11 @@ var googleMap = '<div id="map"></div>';
 
 function inName(name) {
   names = name.trim().split(" ");
-  name[1] = name[1].toUpperCase();
-  name[0] = name[0].slice(0,1).toUpperCase() + 
-            name[0].slice(1).toLowerCase();
-  return name[0] + " " + name[1];
+  console.log(names);
+  names[1] = names[1].toUpperCase();
+  names[0] = names[0].slice(0,1).toUpperCase() + 
+            names[0].slice(1).toLowerCase();
+  return names[0] + " " + names[1];
 }
 
 /*
@@ -72,7 +73,7 @@ The International Name challenge in Lesson 2 where you'll create a function that
 */
 $(document).ready(function() {
   $('button').click(function() {
-    var iName = inName(name) || function(){};
+    var iName = inName(bio.name) || function(){};
     $('#name').html(iName);  
   });
 }); 
